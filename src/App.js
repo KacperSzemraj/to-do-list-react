@@ -10,7 +10,6 @@ const tasks = [
   { id: 1, content: "Przejść na Reacta", done: true },
   { id: 2, content: "Pobiegać", done: false },
   { id: 3, content: "Zrobić deployment na GitHub Pages", done: true },
-  { id: 4, content: "Posłuchać muzyki", done: false },
 ];
 
 const hideDoneTasks = false;
