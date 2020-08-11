@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 import { List, Item, Content, Button } from "./styled";
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
