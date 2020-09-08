@@ -10,7 +10,7 @@ export const Button = styled.button`
     background: transparent;
     border: none;
     margin: 0 0 0 20px;
-    transition: color 0.3s;
+    transition: filter 0.3s;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-basis: 100%;
@@ -18,10 +18,10 @@ export const Button = styled.button`
     }
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        filter: brightness(110%);
     }
 
     &:disabled {
-        color: #ccc;
+        color: ${({ theme }) => theme.color.silver};
     }
 `;
