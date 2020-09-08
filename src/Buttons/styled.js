@@ -6,7 +6,7 @@ export const ButtonsWrapper = styled.div`
 `;
 
 export const Button = styled.button`
-    color: teal;
+    color: ${({ theme }) => theme.color.teal};
     background: transparent;
     border: none;
     margin: 0 0 0 20px;
