@@ -5,20 +5,20 @@ export const StyledForm = styled.form`
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 
-    @media(max-width: 767px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;
 
 export const Input = styled.input`
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid ${({ theme }) => theme.color.alto};
 `;
 
 export const Button = styled.button`
     padding: 10px;
-    background: hsl(180, 100%, 25%);
-    color: white;
+    background: ${({ theme }) => theme.color.teal};
+    color: ${({ theme }) => theme.color.white};
     cursor: pointer;
     border: none;
     transition: 0.3s;
