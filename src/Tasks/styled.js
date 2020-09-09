@@ -38,25 +38,17 @@ export const Button = styled.button`
 
     ${({ toggleDone }) => toggleDone && css`
         background: ${({ theme }) => theme.color.forestGreen};
-
-        &:hover {
-            filter: brightness(110%);
-        }
-
-        &:active {
-            filter: brightness(120%)
-        }
     `}
 
     ${({ remove }) => remove && css`
         background: ${({ theme }) => theme.color.crimson};
-
-        &:hover {
-            filter: brightness(110%);
-        }
-
-        &:active {
-            filter: brightness(120%);
-        }
     `}
+
+    &:hover {
+        filter: brightness(110%);
+    }
+
+    &:active {
+        filter: brightness(120%);
+    }
 `;
