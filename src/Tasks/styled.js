@@ -12,7 +12,7 @@ export const Item = styled.li`
     grid-gap: 10px;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid ${({ theme }) => theme.color.alto};
 
     ${({ hidden }) => hidden && css`
          display: none;
@@ -24,20 +24,20 @@ export const Content = styled.span`
 
     ${({ done }) => done && css`
         text-decoration: line-through;
-        color: #888888;
+        color: ${({ theme }) => theme.color.gray};
     `}
 `;
 
 export const Button = styled.button`
     border: none;
-    color: white;
+    color: ${({ theme }) => theme.color.white};
     width: 30px;
     height: 30px;
     padding: 0;
     transition: background 0.3s;
 
     ${({ toggleDone }) => toggleDone && css`
-        background: hsl(120, 65%, 35%);
+        background: ${({ theme }) => theme.color.forestGreen};
 
         &:hover {
             background: hsl(120, 65%, 40%);
@@ -49,7 +49,7 @@ export const Button = styled.button`
     `}
 
     ${({ remove }) => remove && css`
-        background: hsl(0, 65%, 40%);
+        background: ${({ theme }) => theme.color.crimson};
 
         &:hover {
             background: hsl(0, 65%, 45%);
