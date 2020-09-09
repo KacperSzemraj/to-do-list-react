@@ -34,17 +34,17 @@ export const Button = styled.button`
     width: 30px;
     height: 30px;
     padding: 0;
-    transition: background 0.3s;
+    transition: filter 0.3s;
 
     ${({ toggleDone }) => toggleDone && css`
         background: ${({ theme }) => theme.color.forestGreen};
 
         &:hover {
-            background: hsl(120, 65%, 40%);
+            filter: brightness(110%);
         }
 
         &:active {
-            background: hsl(120, 65%, 45%);
+            filter: brightness(120%)
         }
     `}
 
@@ -52,11 +52,11 @@ export const Button = styled.button`
         background: ${({ theme }) => theme.color.crimson};
 
         &:hover {
-            background: hsl(0, 65%, 45%);
+            filter: brightness(110%);
         }
 
         &:active {
-            background: hsl(0, 65%, 50%);
+            filter: brightness(120%);
         }
     `}
 `;
